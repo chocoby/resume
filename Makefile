@@ -26,5 +26,9 @@ endif
 clean:
 	$(RM) *.html *.pdf
 
+docker_html:
+	docker build -t mwhite/resume .
+	docker run -t -i  -v `pwd`:/data mwhite/resume /bin/bash -c 'python resume.py html --no-gravatar < myresume.md | pandoc -t html5 -c myresume.css -o myresume.html'
+
 $(LATEX_TEMPLATE):
 	git submodule update --init
