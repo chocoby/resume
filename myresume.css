@@ -1,0 +1,70 @@
+body {
+    background: #FBFBFB;
+    color: #333;
+    font-family: 'Helvetica', 'Kozuka Gothic Pro';
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+#container {
+    margin: auto;
+    width: 7.5in;
+    padding: .5in;
+}
+
+#contact {
+    float: right;
+    text-align: right;
+    line-height: 1.0;
+}
+
+#contact p {
+    margin: .5em;
+}
+
+img {
+    padding: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+a {
+    color: #333;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h3:before {
+    content: "・";
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul li ul {
+    margin-bottom: 0em;
+}
+
+h3 + p {
+    margin-left: 25px;
+}
+
+ul li ul li {
+  margin-left: -25px;
+}
+
+li {
+    margin-top: 0em;
+}
