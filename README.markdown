@@ -27,6 +27,11 @@ To generate PDF and HTML versions of each .md file in the directory:
 
     $ make
 
+Generate with Docker:
+
+    # Place and edit myresume.md
+    $ make docker_html
+
 In order to enable visually appealing display of contact information, the
 Markdown is passed through a Python script that looks for contact details
 beginning on the fourth line and moves them into a right-aligned, zero-height
